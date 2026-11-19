@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102a46">
+  <title>Controle Operacional de TI — RioSaúde</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="module" src="./js/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Ir para o conteúdo</a>
+  <aside id="sidebar" class="sidebar">
+    <a class="brand" href="#dashboard" aria-label="RioSaúde, Dashboard Geral">
+      <span class="brand-mark" aria-hidden="true">+</span>
+      <span>RioSaúde<small>CONTROLE OPERACIONAL DE TI</small></span>
+    </a>
+    <nav aria-label="Painel operacional" id="navigation"></nav>
+    <div class="sidebar-foot"><span></span> Operações de TI</div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar">
+      <button class="mobile-menu" id="menu" aria-controls="sidebar" aria-expanded="false" aria-label="Abrir menu">☰</button>
+      <span class="top-label">CONTROLE OPERACIONAL DE TI — RIOSAÚDE</span>
+      <time id="clock"></time>
+    </header>
+    <main id="main" tabindex="-1">
+      <div id="notice" aria-live="polite" hidden></div>
+      <div id="view"></div>
+    </main>
+  </div>
+</body>
+</html>
