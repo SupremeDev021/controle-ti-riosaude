@@ -1,17 +1,27 @@
 # Controle Operacional de TI — RioSaúde
 
-Frontend em HTML, CSS e JavaScript para escala mensal e cobertura informada de TI das 14 unidades. Backend publicado no Google Apps Script com armazenamento no Google Sheets.
+Módulo de escalas e cobertura informada de TI para 14 unidades de saúde. Frontend em HTML, CSS e JavaScript puro, backend no Google Apps Script e persistência no Google Sheets.
 
-Funcionalidades: dashboard, montagem mensal por seleção de datas, chegada individual de técnicos e substitutos, saídas, trocas, falta de cobertura, calendário, histórico e modo TV.
+[Acessar o sistema](https://supremedev021.github.io/controle-ti-riosaude/) · [Instalação](docs/INSTALACAO.md) · [Integração à plataforma principal](docs/INTEGRACAO.md)
 
-## Hospedagem
+## Funcionalidades
 
-Ative GitHub Pages na branch main, pasta raiz. Configure a origem do site nas propriedades do Apps Script em FRONTEND_ORIGIN. A URL pública da API fica em js/config.js. O transporte usa formulário e iframe com confirmação por postMessage para lidar com os redirecionamentos do Google.
+Escalas mensais em lote, montagem por calendário, chegada individual de técnicos e substitutos, saídas antecipadas, substituições, períodos sem cobertura, histórico auditado, Dashboard e modo TV com 14 unidades.
 
-## Operação
+## Conteúdo
 
-A escala planejada não confirma presença. Registre cada chegada para habilitar cobertura durante o intervalo vigente. Saída antecipada encerra a cobertura do titular. Substitutos exigem confirmação própria. A consulta do dashboard é atualizada a cada 60 segundos e após gravações.
+O repositório contém o frontend, `apps-script/Code.gs`, `apps-script/Coverage.gs`, manifesto do Apps Script, configurações de exemplo e testes. Os exemplos não incluem IDs das planilhas atuais. A implantação Google e as permissões devem ser verificadas separadamente pela equipe responsável.
+
+Para outra instalação, copie `js/config.example.js` para `js/config.js` e configure sua URL `/exec`. O config.js do site existente mantém o endpoint público já publicado.
+
+## Testes
+
+Com Node.js 24: `node --test tests/coverage.test.mjs`. Os testes simulam os serviços Google. O guia de instalação descreve a homologação em uma planilha independente.
+
+## Integração
+
+A compatibilidade final depende da arquitetura da plataforma principal. O módulo usa rotas por hash, CSS global e um canal de resposta da API baseado em window.top. A incorporação por iframe ou como componente precisa de adaptação e homologação. Consulte a análise técnica antes de incorporar os arquivos.
 
 ## Acesso público
 
-O sistema não exige login. O endpoint público permite leitura e gravação por quem descobrir sua URL. Validação, limites de requisição e controle de concorrência não identificam supervisores. Não registrar dados sensíveis.
+O sistema não exige login. Quem descobrir a URL do endpoint pode consultar e alterar escalas. Validação, controle de concorrência e limitação global de requisições não autenticam supervisores. Não registrar dados sensíveis.
