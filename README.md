@@ -4,13 +4,15 @@ Módulo de escalas e cobertura informada de TI para 14 unidades de saúde. Front
 
 [Acessar o sistema](https://supremedev021.github.io/controle-ti-riosaude/) · [Instalação](docs/INSTALACAO.md) · [Integração à plataforma principal](docs/INTEGRACAO.md)
 
+**Integração com Claude:** comece por [CLAUDE.md](CLAUDE.md), pela [entrega técnica](docs/ENTREGA-CLAUDE.md) e pelas [configurações atuais com os IDs das planilhas](config/integracao-atual.json).
+
 ## Funcionalidades
 
 Escalas mensais em lote, montagem por calendário, chegada individual de técnicos e substitutos, saídas antecipadas, substituições, períodos sem cobertura, histórico auditado, Dashboard e modo TV com 14 unidades.
 
 ## Conteúdo
 
-O repositório contém o frontend, `apps-script/Code.gs`, `apps-script/Coverage.gs`, manifesto do Apps Script, configurações de exemplo e testes. Os exemplos não incluem IDs das planilhas atuais. A implantação Google e as permissões devem ser verificadas separadamente pela equipe responsável.
+O repositório contém o frontend, backend completo, manifesto do Apps Script, configurações atuais e de exemplo, testes e documentação. Os IDs reais de produção e homologação foram incluídos por autorização do responsável para a integração. A implantação Google e as permissões devem ser verificadas separadamente pela equipe responsável.
 
 Para outra instalação, copie `js/config.example.js` para `js/config.js` e configure sua URL `/exec`. O config.js do site existente mantém o endpoint público já publicado.
 

@@ -4,6 +4,8 @@
 
 A arquitetura da plataforma principal ainda não foi fornecida. Esta é uma avaliação do código do módulo. A compatibilidade com a plataforma de destino permanece pendente e não deve ser considerada aprovada.
 
+Os IDs reais e as configurações da instalação existente estão em `config/integracao-atual.json`. O roteiro para o agente que incorporará o módulo está em `CLAUDE.md` e `docs/ENTREGA-CLAUDE.md`.
+
 O módulo utiliza frontend estático com módulos ES, Google Apps Script e Sheets. Não depende de React, Vue, bibliotecas de UI, bundler, SQL ou serviço de autenticação.
 
 ## Opções e impactos identificados

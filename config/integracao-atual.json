@@ -1,0 +1,39 @@
+{
+  "apiVersion": 3,
+  "timeZone": "America/Sao_Paulo",
+  "unitCount": 14,
+  "frontendUrl": "https://supremedev021.github.io/controle-ti-riosaude/",
+  "repositoryUrl": "https://github.com/SupremeDev021/controle-ti-riosaude",
+  "apiUrl": "https://script.google.com/macros/s/AKfycbz2qJrbemvWCFuHfFsms-1ny7hMjDeWTGR97m48LK7zsg--27e80xPJq12oYFtAqLHX/exec",
+  "appsScript": {
+    "projectId": "1VB3w3mBK65D7gTg0lc8NW5mtOhscxTNek50vp93W-YsT6_tkfyF9REnZ",
+    "editorUrl": "https://script.google.com/home/projects/1VB3w3mBK65D7gTg0lc8NW5mtOhscxTNek50vp93W-YsT6_tkfyF9REnZ/edit",
+    "deploymentId": "AKfycbz2qJrbemvWCFuHfFsms-1ny7hMjDeWTGR97m48LK7zsg--27e80xPJq12oYFtAqLHX",
+    "scriptProperties": {
+      "SPREADSHEET_ID": "1Nkxk7jcGPQaiN_SPcQoNi4VbRfScy2tRK7kMmI0bU48",
+      "FRONTEND_ORIGIN": "http://localhost:8000,https://supremedev021.github.io"
+    }
+  },
+  "spreadsheets": {
+    "production": {
+      "id": "1Nkxk7jcGPQaiN_SPcQoNi4VbRfScy2tRK7kMmI0bU48",
+      "url": "https://docs.google.com/spreadsheets/d/1Nkxk7jcGPQaiN_SPcQoNi4VbRfScy2tRK7kMmI0bU48/edit"
+    },
+    "homologation": {
+      "id": "1DNTAdokYm1bh_vbzmdml0Rk-og3pBdac3UklcXM6_ts",
+      "url": "https://docs.google.com/spreadsheets/d/1DNTAdokYm1bh_vbzmdml0Rk-og3pBdac3UklcXM6_ts/edit",
+      "purpose": "Homologação e origem histórica da migração já concluída. Não é o destino da API de produção."
+    }
+  },
+  "verification": {
+    "date": "2026-11-19",
+    "healthAction": "health",
+    "confirmedFields": ["apiVersion", "appsScript.scriptProperties.SPREADSHEET_ID", "unitCount", "timeZone"]
+  },
+  "notes": [
+    "Arquivo de referência para integração. Não é carregado automaticamente pelo frontend ou pelo Apps Script.",
+    "A origem da plataforma de destino ainda precisa ser identificada e configurada no Apps Script.",
+    "IDs e URLs não concedem permissão para editar o projeto ou a planilha no Google.",
+    "O endpoint da API é público e aceita leitura e gravação sem autenticação."
+  ]
+}

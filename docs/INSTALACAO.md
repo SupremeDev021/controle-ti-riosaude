@@ -1,6 +1,6 @@
 # Instalação do módulo RioSaúde
 
-Este guia não contém IDs de planilhas da instalação atual. A implantação do Apps Script e as permissões da planilha devem ser verificadas separadamente pela equipe responsável.
+Este guia descreve uma instalação. Para incorporar a instalação existente, consulte `config/integracao-atual.json` e `docs/ENTREGA-CLAUDE.md`, que contêm os IDs reais e o estado atual. A implantação do Apps Script e as permissões da planilha devem ser verificadas separadamente pela equipe responsável.
 
 ## Estrutura entregue
 
@@ -25,7 +25,7 @@ O `js/config.js` usado pelo site existente mantém seu endpoint público. Para u
 6. Publique como App da Web executando como proprietário, com acesso anônimo conforme a política da instituição. Configure a URL `/exec` em `js/config.js`.
 7. Em futuras alterações do servidor, atualize a implantação para uma nova versão. Salvar arquivos no editor não atualiza automaticamente a versão publicada.
 
-Não importe arquivos de migração específicos da instalação anterior. Para integrar dados existentes, faça um inventário e uma cópia de segurança antes de definir o procedimento de migração.
+Não execute `Migration.gs` como parte de uma instalação ou incorporação normal: a consolidação anterior já foi realizada. Para uma nova migração de dados, faça um inventário e uma cópia de segurança antes de definir o procedimento.
 
 ## Estrutura dos dados
 
